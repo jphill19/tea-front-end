@@ -1,0 +1,54 @@
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+.subscription:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.subscription h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subscription p {
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.subscription p strong {
+  color: #333;
+}
+
+.status-active {
+  color: green;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: red;
+  font-weight: bold;
+}
+.subscription-image {
+  margin-left: auto;
+}
+
+.subscription-image img {
+  width: 125px; 
+  height: auto;
+  border-radius: 5px;
+}
+
+.subscription-link {
+  text-decoration: none;
+  color: inherit;
+}
