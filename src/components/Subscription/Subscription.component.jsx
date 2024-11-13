@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const Subscription = ({ id, title, status, frequency, customer_id, price, teas_count }) => {
   const statusClass = status === "active" ? "status-active" : "status-inactive";
 
-  // Image selection based on tea_count
   let teaImage;
   if (teas_count === 1) {
     teaImage = '/single_leaf.png';
