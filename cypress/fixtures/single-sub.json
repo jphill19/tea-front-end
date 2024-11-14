@@ -1,0 +1,39 @@
+{
+  "data": {
+      "id": "12",
+      "type": "subscription",
+      "attributes": {
+          "title": "Johns Monthy Tea",
+          "status": "active",
+          "frequency": "monthly",
+          "price": 48.27,
+          "customer": {
+              "id": 7,
+              "first_name": "John",
+              "last_name": "Hill",
+              "email": "john@example.com",
+              "address": "123 Tea Lane, Teatown"
+          },
+          "teas": [
+              {
+                  "id": 31,
+                  "title": "TerraVita Blueberry Banana White Tea, (Blueberry Banana,Loose Leaf White Tea, 4 oz, 1-Pack, Zin: 537954)",
+                  "description": "<ul>  <li>Packaged in the United States in a cGMP certified facilty (current Good Manufacturing Practice).</li>  <li>No fillers.</li>  <li>Loose Leaf White Tea - Packed in a convenient upright pouch!</li> </ul>",
+                  "price": 44.95,
+                  "temperature": 85,
+                  "brew_time": 5,
+                  "image": "https://img.spoonacular.com/products/4027264-312x231.jpeg"
+              },
+              {
+                  "id": 32,
+                  "title": "Twinings French Vanilla Black Chai Tea Bags, 20 Count (Pack of 6)",
+                  "description": "FRESH FLAVOR: Six boxes of 20 French Vanilla Chai tea bags. Fine black tea expertly blended with spices and French vanilla flavor. Steep for four to six minutes for the perfect cup of French vanilla chai tea. <br />ONLY THE FINEST QUALITY: Our expert blenders source only the finest leaves cultivated to our exacting standards by trusted growers around the world. From these tea gardens we hand-select the leaves that will shape your next Twinings moment.Kosher <br />FRENCH VANILLA CHAI TEA: Twinings blends to perfection fine black teas with the sweet and savory spice flavors of cinnamon, cardamom, cloves and ginger to give you a line of great-tasting Chai teas with a bold taste and rich, vibrant aroma. <br />RICH HISTORY: In 1706 Thomas Twining began selling fine tea from an English storefront in The Strand, London. Today, Twinings still sells teas from the original store and in more than 100 countries throughout the world. <br />HAND SELECTED FOR YOUR HOME: Made without artificial ingredients, Twinings natural teas provide a wholesome tea experience. If you enjoy Bigelow Tea, Lipton Tea, Harney &amp; Sons Tea, Davidson's Tea, or Prince of Peace Tea - try Twinings of London Tea.",
+                  "price": 3.32,
+                  "temperature": 85,
+                  "brew_time": 5,
+                  "image": "https://img.spoonacular.com/products/6978850-312x231.jpg"
+              }
+          ]
+      }
+  }
+}

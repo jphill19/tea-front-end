@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { Fragment, useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import { fetchSubscriptionById, updateSubscriptionStatus } from '../../api/teaBackEndApi';
 import './SubscriptionDashboard.css';
 
@@ -48,39 +48,42 @@ const SubscriptionDashboard = () => {
   const statusClass = attributes.status === "active" ? "status-active" : "status-inactive";
 
   return (
-    <div className="subscription-dashboard">
-      <div className="subscription-header">
-        <h1>{attributes.title}</h1>
-        <p className='status-container'>
-          <strong>Status:</strong>
-          <span className={statusClass}>{attributes.status}</span>
-          <button className="toggle-button" onClick={toggleStatus}>Change Status</button>
-        </p>
-        <p><strong>Frequency:</strong> {attributes.frequency}</p>
-        <p><strong>Total Price:</strong> ${attributes.price}</p>
-      </div>
+    <Fragment>
+      <div className="subscription-dashboard">
+      <Link to="/" className="go-back-link">Go back Home</Link>
+        <div className="subscription-header">
+          <h1>{attributes.title}</h1>
+          <p className='status-container'>
+            <strong>Status:</strong>
+            <span className={statusClass}>{attributes.status}</span>
+            <button className="toggle-button" onClick={toggleStatus}>Change Status</button>
+          </p>
+          <p><strong>Frequency:</strong> {attributes.frequency}</p>
+          <p><strong>Total Price:</strong> ${attributes.price}</p>
+        </div>
 
-      <div className="customer-info">
-        <h2>Customer Information</h2>
-        <p><strong>Name:</strong> {customer.first_name} {customer.last_name}</p>
-        <p><strong>Email:</strong> {customer.email}</p>
-        <p><strong>Address:</strong> {customer.address}</p>
-      </div>
+        <div className="customer-info">
+          <h2>Customer Information</h2>
+          <p><strong>Name:</strong> {customer.first_name} {customer.last_name}</p>
+          <p><strong>Email:</strong> {customer.email}</p>
+          <p><strong>Address:</strong> {customer.address}</p>
+        </div>
 
-      <div className="teas-info">
-        <h2>Teas in Subscription</h2>
-        {teas.map((tea) => (
-          <div key={tea.id} className="tea-item">
-            <h3>{tea.title}</h3>
-            <img src={tea.image} alt={tea.title} className="tea-image" />
-            <p><strong>Description:</strong> {tea.description}</p>
-            <p><strong>Price:</strong> ${tea.price}</p>
-            <p><strong>Temperature:</strong> {tea.temperature}°C</p>
-            <p><strong>Brew Time:</strong> {tea.brew_time} mins</p>
-          </div>
-        ))}
+        <div className="teas-info">
+          <h2>Teas in Subscription</h2>
+          {teas.map((tea) => (
+            <div key={tea.id} className="tea-item">
+              <h3>{tea.title}</h3>
+              <img src={tea.image} alt={tea.title} className="tea-image" />
+              <p><strong>Description:</strong> {tea.description}</p>
+              <p><strong>Price:</strong> ${tea.price}</p>
+              <p><strong>Temperature:</strong> {tea.temperature}°C</p>
+              <p><strong>Brew Time:</strong> {tea.brew_time} mins</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

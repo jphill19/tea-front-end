@@ -48,7 +48,7 @@ const SubscriptionManager = () => {
         placeholder="search subscriptions"
         onChangeHandler={onSearchChange}
       />
-      <ul className="subscriptions-list">
+      <div className="subscriptions-list">
         {filteredSubscriptions.map((subscription) => (
           <Subscription
             key={subscription.id}
@@ -61,7 +61,7 @@ const SubscriptionManager = () => {
             teas_count={subscription.attributes.teas_count}
           />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

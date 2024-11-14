@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "id": "12",
+            "type": "subscription",
+            "attributes": {
+                "title": "Johns Monthy Tea",
+                "status": "active",
+                "frequency": "monthly",
+                "customer_id": 7,
+                "teas_count": 2,
+                "price": 48.27
+            }
+        },
+        {
+            "id": "13",
+            "type": "subscription",
+            "attributes": {
+                "title": "Bob's Weekly Tea Subscription",
+                "status": "active",
+                "frequency": "weekly",
+                "customer_id": 8,
+                "teas_count": 2,
+                "price": 74.58
+            }
+        },
+        {
+            "id": "14",
+            "type": "subscription",
+            "attributes": {
+                "title": "John's Daily Tea Subscription",
+                "status": "inactive",
+                "frequency": "daily",
+                "customer_id": 7,
+                "teas_count": 1,
+                "price": 3.32
+            }
+        },
+        {
+            "id": "15",
+            "type": "subscription",
+            "attributes": {
+                "title": "Bob's Variety Tea Subscription",
+                "status": "active",
+                "frequency": "monthly",
+                "customer_id": 8,
+                "teas_count": 3,
+                "price": 77.9
+            }
+        }
+    ]
+}

@@ -5,6 +5,8 @@
   max-width: 800px;
   margin: auto;
   grid-template-columns: 1fr 1fr;
+  background-color: #f9f9f9;
+  border-radius: 8px;
   }
 
   .teas-info {
@@ -77,4 +79,19 @@
 
 .toggle-button:hover {
   background-color: #555; 
+}
+
+.go-back-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  grid-column: span 2
 }
